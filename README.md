@@ -24,64 +24,33 @@ mice, mice attributes, and left mouse button click latency.
 
 ## **Components**
 
-**Mouse DB tab**
+### Mouse DB tab
 
-1.  Make- brand
-2.  Mode - product
-3.  VID - vendor ID
-4.  PID - product ID
-5.  Revision - firmware version tested (BCD Device ID)
-6.  Mode - wired / wireless
-    * Whether the mouse is operating wired or wirelessly.
-7.  Type - wired / wireless, reported through the USB Extension
-    * Implemented by the mouse manufacturer
-    * This field can be "none" if the vendor is not using our extension
-8.  reportExtensionId - true if the mouse reports PID, VID, and Revision extension
-    * This is used by the mouse vendor to indicate a different PID and Revision in cases where the device connected to the PC is a dongle or intermediate device.
-9.  perClickLatency - true if the mouse firmware implements per click latency
-10. polledActuation - true if the mouse uses polled actuation
-    * An example of this is an optical switch that pulses the detection laser.
-11. pulseFrequency(Hz) - zero unless the mouse uses polledActuation
-    * How often the mouse checks to see if there was a click
-    * This measurement can only be taken with an oscilloscope
-12. actuationDetectionDuration(us) - the amount of time the mouse will accept a click per cycle.
-    * For optical mice, this is the amount of time the detection light / laser is on
-13. maximumHostPollRate(Hz) - maximum polling rate supported by the mouse
-14. avgLmbLatency(us) - average latency of 500 clicks
-15. stdDev(us) - standard deviation of 500 clicks
-16. adjustedAvgLmbLatency(us) - ((1000 \* (pulseFrequency /
-    maximumHostPollRate) - actuationDetectionDuration) / 2) +
-    avgLMBLatency
-17. testedBy - who tested the mouse
-    * NVIDIA only for now
+   | **Column**| **Description** | **Example** |
+   |------------|-----------------|------------|
+   |**make**| Brand |Logitech G|
+   |**model**| Product |PRO X SUPERLIGHT (wired)|
+   |**vid**| Vendor ID |046d|
+   |**pid**| Product ID |c094|
+   |**revision**| Firmware version tested (BCD Device ID)|2500|
+   |**mode**| `<wired / wireless>`<br>- Whether the mouse is operating wired or wirelessly|wired|
+   |**type**| `<wired / wireless / none>`<br>- Reported through the USB Extension<br>- Implemented by the mouse manufacturer<br>- This field can be "none" if the vendor is not using our extension |none|
+   |**reportExtensionId**| `<TRUE / FALSE>`<br>- If the mouse reports PID, VID, and Revision extension<br>- This is used by the mouse vendor to indicate a different PID and Revision in cases where the device |FALSE|
+   |**perClickLatency**| `<TRUE / FALSE>`<br>- If the mouse firmware implements per click latency |TRUE|
+   |**polledActuation**| `<TRUE / FALSE>`<br>- If the mouse uses polled actuation<br>- An example of this is an optical switch that pulses the detection laser |FALSE|
+   |**pulseFrequencyHz**| Zero unless the mouse uses polledActuation<br>- How often the mouse checks to see if there was a click<br>- This measurement can only be taken with an oscilloscope |0|
+   |**actuationDetectionDurationHz**| The amount of time the mouse will accept a click per cycle<br>- For optical mice, this is the amount of time the detection light / laser is on |0|
+   |**maximumHosePollRateHz**| Maximum polling rate supported by the mouse |1000|
+   |**avgLmbLatencyUs**| Average latency of 500 clicks |808|
+   |**stdDevUs**| Standard deviation of 500 clicks |302|
+   |**adjustedAvgLmbLatencyUs**| ((1000 \* (pulseFrequency / maximumHostPollRate) - actuationDetectionDuration) / 2) + avgLMBLatency |808|
+   |**TestedBy**| Who tested the mouse<br>- NVIDIA only for now |NVIDIA|
 
-**Mouse brand workbook tabs**
+### Mouse brand workbook tabs
 
 *  Mice brands that have three or more tested mice should have their own worksheet tab.
 
 *  Each column represents mouse make, model, minimum, maximum, average, standard devviation, and 500 recorded left mouse button click latencies.
-
-## **Example**
-
-   | **Columns** | **Values**|
-   |-----------------------------------|--------------------------|
-   |**make**                           |Logitech G  
-   |**model**                          |PRO X SUPERLIGHT (wired)|
-   |**vid**                            |046d|
-   |**pid**                            |c094|
-   |**revision**                       |2500|
-   |**mode**                           |wired|
-   |**type**                           |none|
-   |**reportExtensionId**              |FALSE|
-   |**perClickLatency**                |TRUE|
-   |**polledActuation**                |FALSE|
-   |**pulseFrequencyHz**               |0|
-   |**actuationDetectionDurationHz**   |0|
-   |**maximumHosePollRateHz**          |1000|
-   |**avgLmbLatencyUs**                |808|
-   |**stdDevUs**                       |302|
-   |**adjustedAvgLmbLatencyUs**        |808|
-   |**TestedBy**                      |NVIDIA|
 
 ## **Licensing**
 
