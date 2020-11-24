@@ -1,10 +1,10 @@
-﻿make,model,vid,pid,revision,mode,type,reportExtensionId,perClickLatency,polledActuation,pulseFrequencyHz,actuationDetectionDurationUs,maximumHostPollRateHz,avgLmbLatencyUs,stdDevUs,adjustedAvgLmbLatencyUs,Tested By
-NVIDIA LUT Version,v0.98.0 11-12-20,10de,0000,0000,wired,none,TRUE,TRUE,TRUE,0,0,0,0,0,0,NVIDIA
+make,model,vid,pid,revision,mode,type,reportExtensionId,perClickLatency,polledActuation,pulseFrequencyHz,actuationDetectionDurationUs,maximumHostPollRateHz,avgLmbLatencyUs,stdDevUs,adjustedAvgLmbLatencyUs,Tested By
+NVIDIA LUT Version,v0.98.0 11-11-20,10de,0000,0000,wired,none,TRUE,TRUE,TRUE,0,0,0,0,0,0,NVIDIA
 Asus,ROG Chakram (wired),0b05,18e3,0928,wired,none,FALSE,FALSE,FALSE,0,0,1000,2115,355,2115,NVIDIA
 Asus,ROG Chakram (wireless),0b05,18e5,0930,wireless,none,TRUE,FALSE,FALSE,0,0,1000,2993,390,2993,NVIDIA
 Asus,ROG Chakram Core,0b05,1958,0108,wired,none,FALSE,TRUE,FALSE,0,0,1000,616,281,616,NVIDIA
-Alienware,AW610M (wireless),0461,4ec0,303,wireless,none,FALSE,TRUE,FALSE,0,0,1000,4543,424,4543,NVIDIA
-Alienware,AW610M (wired),0461,4e9d,308,wired,none,FALSE,TRUE,FALSE,0,0,1000,4125,402,4125,NVIDIA
+Alienware,AW610M (wireless),0461,4ec0,0303,wireless,none,FALSE,TRUE,FALSE,0,0,1000,4543,424,4543,NVIDIA
+Alienware,AW610M (wired),0461,4e9d,0308,wired,none,FALSE,TRUE,FALSE,0,0,1000,4125,402,4125,NVIDIA
 Finalmouse,Ultralight Phantom,04d9,ad50,0100,wired,none,FALSE,FALSE,FALSE,0,0,1000,6132,622,6132,NVIDIA
 Finalmouse,Air58 Ninja CBB,04d9,ad50,0100,wired,none,FALSE,FALSE,FALSE,0,0,1000,6164,593,6164,NVIDIA
 Finalmouse,Ultralight 2 Cape Town,04d9,ad50,0100,wired,none,FALSE,FALSE,FALSE,0,0,1000,6330,586,6330,NVIDIA
@@ -27,10 +27,10 @@ Logitech G,703 Lightspeed (wired),046d,c090,2202,wired,none,FALSE,FALSE,FALSE,0,
 Logitech G,403 Hero,046d,c08f,4501,wired,none,FALSE,FALSE,FALSE,0,0,1000,2562,291,2562,NVIDIA
 Logitech G,903 Lightspeed (wired),046d,c091,2301,wired,none,FALSE,FALSE,FALSE,0,0,1000,2516,289,2516,NVIDIA
 Logitech G,502 Lightspeed (wired),046d,c08d,1700,wired,none,FALSE,FALSE,FALSE,0,0,1000,2527,283,2527,NVIDIA
-Logitech G,903 Lightspeed (wired),046d,c091,2301,wired,none,FALSE,FALSE,FALSE,0,0,1000,2516,289,2516,NVIDIA
-Logitech G,502 Lightspeed (wired),046d,c08d,1700,wired,none,FALSE,FALSE,FALSE,0,0,1000,2527,283,2527,NVIDIA
-Razer,Deathadder V2 Pro (wired),1532,007c,0100,wired,none,FALSE,TRUE,FALSE,0,0,1000,1400,291,1400,NVIDIA
-Razer,Deathadder V2 Pro (wireless),1532,007d,0100,wireless,none,FALSE,TRUE,FALSE,0,0,1000,1587,449,1587,NVIDIA
+Logitech G,PRO X SUPERLIGHT (wireless),046d,4093,0000,wireless,wireless,TRUE,FALSE,FALSE,0,0,1000,1843,284,1843,NVIDIA
+Logitech G,PRO X SUPERLIGHT (wired),046d,c094,2500,wired,none,FALSE,TRUE,FALSE,0,0,1000,808,302,808,NVIDIA
+Razer,Deathadder V2 Pro (wired),1532,007c,0100,wired,none,FALSE,FALSE,FALSE,0,0,1000,1400,291,1400,NVIDIA
+Razer,Deathadder V2 Pro (wireless),1532,007d,0100,wireless,none,FALSE,FALSE,FALSE,0,0,1000,1587,449,1587,NVIDIA
 Razer,Deathadder Elite,1532,005c,0200,wired,none,FALSE,FALSE,FALSE,0,0,1000,10150,428,10150,NVIDIA
 Razer,Deathadder V2,1532,0084,0200,wired,none,FALSE,FALSE,TRUE,2000,150,1000,1309,205,2234,NVIDIA
 Razer,Viper Ultimate (wired),1532,007a,0100,wired,none,FALSE,FALSE,TRUE,1000,180,1000,1309,423,1719,NVIDIA
