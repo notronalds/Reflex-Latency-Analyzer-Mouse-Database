@@ -1,21 +1,16 @@
 # **NVIDIA Reflex Latency Analyzer Mice Database**
 
-NVIDIA Reflex Latency Analyzer is a revolutionary system latency
-measurement device designed to help gamers measure the responsiveness of
-their PC. By detecting clicks coming from your mouse and measuring the
-time it takes for the resulting pixels to change on screen, NVIDIA
-Reflex Latency Analyzer can instantly break down the latency in your
-system.
+[NVIDIA Reflex Latency Analyzer](https://www.nvidia.com/en-us/geforce/news/reflex-low-latency-platform/#nvidia-reflex-latency-analyzer) is a system latency measurement device designed to help gamers measure the responsiveness of their PC. By detecting clicks coming from your mouse and measuring the time it takes for the resulting pixels to change on screen, NVIDIA Reflex Latency Analyzer can break down the latency in your system. 
 
-Mouse latency is a critical part of the system latency equation: Mouse
-Latency + PC Latency + Display Latency = System Latency. The database in
-this repository contains the set of tested mice that NVIDIA has
-validated; containing both Reflex Latency Analyzer compatible mice, and
-popular non-compatible mice.
+Mouse latency is a critical part  of the system latency equation: Mouse Latency + PC Latency + Display Latency = System Latency. The database in this repository contains the set of tested mice that NVIDIA has validated; containing both Reflex Latency Analyzer compatible mice, and popular non-compatible mice. 
 
-This database is used by the Reflex Latency Analyzer to identify mice
-and provide a database average when the mouse does not support per-click
-latencies.
+There are three categories of mice: 
+1. Reflex Latency Analyzer Compatible - Supports NVIDIA’s the dynamic click report extension 
+2. Non-Compatible - Does not support the dynamic click report extension, but can still report a database average
+3. Unsupported - Mouse does not exist in the database
+
+This database is used by the Reflex Latency Analyzer to identify mice and provide a database average when the mouse does not support per-click latencies.
+
 
 ## **Contents**
 
@@ -46,12 +41,6 @@ mice, mice attributes, and left mouse button click latency.
    |**adjustedAvgLmbLatencyUs**| ((1000 \* (pulseFrequency / maximumHostPollRate) - actuationDetectionDuration) / 2) + avgLMBLatency |808|
    |**TestedBy**| Who tested the mouse<br>- NVIDIA only for now |NVIDIA|
 
-### Mouse brand workbook tabs
-
-*  Mice brands that have three or more tested mice should have their own worksheet tab.
-
-*  Each column represents mouse make, model, minimum, maximum, average, standard devviation, and 500 recorded left mouse button click latencies.
-
 ## **Licensing**
 
 By contributing to this document the contributor acknowledges that that
@@ -59,6 +48,6 @@ all contributions are licensed under [CC BY4.0](https://creativecommons.org/lice
 
 ## **Additional Information**
 
-[**NVIDIA Reflex**](https://www.nvidia.com/en-us/geforce/news/reflex-low-latency-platform/)
+NVIDIA Reflex landing page: [NVIDIA Reflex](https://www.nvidia.com/en-us/geforce/news/reflex-low-latency-platform/)
 
-[**Mouse Partner** ](https://developer.nvidia.com/reflex-mice-partner-program-interest)
+Peripheral Vendor Signup to become Reflex Latency Analyzer Compatible: [Mouse Partner](https://developer.nvidia.com/reflex-mice-partner-program-interest)
